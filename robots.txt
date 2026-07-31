@@ -5,4 +5,4 @@ Allow: /
 Disallow: /pages/thank-you.html
 
 # Sitemap reference (assuming it will be hosted on the root domain)
-Sitemap: https://www.jboutdoorservices.co.uk/sitemap.xml
+Sitemap: https://www.standfastfence.com/sitemap.xml

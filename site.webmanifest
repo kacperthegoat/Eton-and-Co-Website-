@@ -1,10 +1,10 @@
 {
-  "name": "JB Outdoor Services Ltd",
-  "short_name": "JB Outdoors",
-  "description": "Expert Landscaping & Groundworks in Wincanton, Somerset.",
+  "name": "Standfast Fencing",
+  "short_name": "Standfast",
+  "description": "Fencing, decking and garden timbercraft in Norwich, Norfolk.",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#141229",
+  "theme_color": "#000000",
   "background_color": "#F5F3EE",
   "icons": [
     {

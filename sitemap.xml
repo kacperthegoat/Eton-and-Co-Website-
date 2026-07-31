@@ -1,160 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage -->
+  <!-- Main pages -->
   <url>
-    <loc>https://www.jboutdoorservices.co.uk/</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://www.standfastfence.com/</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Main pages -->
   <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/about.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://www.standfastfence.com/pages/services.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.standfastfence.com/pages/about.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://www.standfastfence.com/pages/gallery.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/gallery.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://www.standfastfence.com/pages/reviews.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/contact.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://www.standfastfence.com/pages/contact.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/privacy-policy.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://www.standfastfence.com/pages/privacy-policy.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
-  <!-- Service pages: Garden Design & Landscaping -->
+  <!-- Service pages -->
   <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/full-garden-transformation.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/professional-turfing.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/fencing.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/patios.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/gravel-driveways.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/general-landscaping.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Service pages: Groundworks & Drainage -->
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/groundworks-footings.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/retaining-walls.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/concrete-pads.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/reduce-digging-levelling.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/drainage-solutions.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Service pages: Digger Hire -->
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/digger-hire.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Service pages: Clearance & Site Prep -->
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/site-clearances.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/hedge-removals.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Service pages: Firewood -->
-  <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/firewood.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://www.standfastfence.com/pages/services/fencing.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/seasoned-firewood.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://www.standfastfence.com/pages/services/picket-fencing.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/unseasoned-logs.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://www.standfastfence.com/pages/services/dog-deer-fencing.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.jboutdoorservices.co.uk/pages/services/wholesale-firewood.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://www.standfastfence.com/pages/services/gates.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.standfastfence.com/pages/services/decking.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.standfastfence.com/pages/services/sheds.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.standfastfence.com/pages/services/pergolas-arbours.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.standfastfence.com/pages/services/trellises.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.standfastfence.com/pages/services/raised-beds-sleepers.html</loc>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

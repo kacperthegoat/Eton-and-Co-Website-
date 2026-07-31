@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Process Form Reference | JB Outdoor Services Ltd</title>
+    <title>Process Form Reference | Standfast Fencing</title>
     
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
@@ -15,8 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --brand-dark:   #141229;
-            --brand-bronze: #e8b01e;
+            --brand-dark:   #000000;
+            --brand-bronze: #C98756;
             --brand-alice:  #F5F3EE;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -202,7 +202,7 @@ if (!empty($email) &amp;&amp; !filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // 10. EMAIL PREPARATION
-$to      = "jboutdoorservicesltd@gmail.com";
+$to      = "standfastfence@gmail.com";
 $subject = sanitize_header_field("New Website Lead: Quote Request from $name");
 
 $body  = "You have received a new quote request from your website.\n\n";
@@ -251,7 +251,7 @@ if (mail($to, $subject, $body, $headers)) {
     exit;
 } else {
     http_response_code(500);
-    die("Error: There was a problem sending your message. Please try calling instead: +44 7445 064666");
+    die("Error: There was a problem sending your message. Please try calling instead: 07976 222991");
 }
 ?&gt;
 </code></pre>

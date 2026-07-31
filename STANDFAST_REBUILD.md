@@ -2,6 +2,11 @@
 
 Converting the duplicated **JB Outdoor Services** site into **Standfast Fencing**.
 
+> **Status: rebuild done, awaiting assets.** All copy, colours, structure, nav, schema, sitemap
+> and the service-page set have been rebuilt. What remains is listed under
+> [§8 Outstanding](#8-outstanding-before-launch) — chiefly photos, logo/favicons, the form
+> endpoint, and real reviews.
+
 ---
 
 ## 1. Client Information (source of truth)
@@ -148,3 +153,76 @@ The site is static HTML + Tailwind (CDN) + a small `global.js` that injects `com
 2. `header.html`/`footer.html` are fetched at runtime; a path or nav mistake there breaks navigation site-wide.
 3. Leftover JB text is easy to miss — do a final `grep -ri "jb\|outdoor services\|wincanton\|somerset\|jboutdoor"` before launch.
 4. Old JB photos accidentally shipping in the gallery or service pages.
+
+---
+
+## 8. Outstanding before launch
+
+Everything in §1–§6 above has been implemented. These are the items that could not be completed
+without assets or accounts from you or Nick.
+
+### Blocking
+
+1. **Contact form endpoint.** `GAS_URL` in [index.html](index.html) and
+   [pages/contact.html](pages/contact.html) is now the placeholder
+   `REPLACE_WITH_NEW_APPS_SCRIPT_EXEC_URL`. JB's endpoint has been removed, so **the form does not
+   submit at all right now**. Create a new Sheet + Apps Script web app on Nick's Google account
+   (script is in the README) and paste the `/exec` URL into both files.
+2. **Logo and favicons.** `assets/imgs/logo.png` and `logo-hovered.png` are still JB's, as are
+   `favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png`, `apple-touch-icon.png`,
+   `android-chrome-192x192.png` and `android-chrome-512x512.png`.
+3. **OG share image.** `assets/imgs/og-image.jpg` is still JB's. Needs a 1200×630 Standfast image.
+4. **Domain / DNS.** Everything canonicalises to `https://www.standfastfence.com`. Confirm Nick
+   controls it and point DNS at the Vercel project at cutover.
+
+### Photos
+
+All of JB's unused images were deleted (210 files). What remains is a small placeholder set:
+
+- `service_imgs/Fencing/` — 12 images, used across the fencing pages and the gallery
+- `service_imgs/Decking/` — 4 images, used across the decking/structures pages
+- `hero_slider/` — 5 home hero images
+- `c4`, `c6`, `c9`, `c13`, `footer1`, `footer2` — used in CTA bands
+
+Empty folders with a README have been created for the services with no photos yet:
+`Picket Fencing`, `Dog and Deer Fencing`, `Gates`, `Sheds`, `Pergolas and Arbours`, `Trellises`,
+`Raised Beds and Sleepers`. Those pages currently reuse the fencing/decking placeholders. Drop new
+photos in and update the `<img src>` list in each page under `pages/services/`.
+
+The home page before/after slider is marked with a `TODO` comment — it needs a genuine
+before/after pair.
+
+### Reviews
+
+JB's ten Google reviews were **removed, not rewritten** — they were real reviews from real named
+customers of a different business, and re-attributing them to Standfast would have been fabricated
+social proof. The same applies to the "5-Star Google Rated" badges, the review QR code and the
+Google review CTA, all of which are gone.
+
+In their place:
+- The home page now has a "Why Standfast" panel built from Nick's own stated selling points.
+- [pages/reviews.html](pages/reviews.html) is a working page with a commented `review-card`
+  template and a "send us your feedback" prompt. Paste in real reviews and delete the
+  `#no-reviews-yet` block.
+
+Ask Nick whether he has a Google Business Profile — if so we can swap in a live reviews embed.
+
+### Claims to verify with Nick
+
+The old site made specific claims that have been softened rather than carried over, because they
+were JB's, not Nick's:
+
+- "8+ / 10+ years experience" — replaced with non-numeric statements. Put the real figure back if
+  Nick has one.
+- "Fully insured" — kept, on the assumption it is true. Confirm.
+- "Licensed waste carrier" — Nick stated this himself, so it is used prominently. Worth adding the
+  registration number as a trust signal.
+- Service area — set to "Norwich and surrounding villages" (his words). The old "10-mile radius"
+  framing and the Somerset village list are gone; the contact-page map now centres on Brundall with
+  a Norfolk village ticker.
+
+### Design note
+
+The site kept its existing dark structure with the palette swapped to Nick's black `#000000` /
+timber `#C98756` / green `#0D7F15`. The dgooch inspiration site is light and white-backgrounded —
+if you want to go that way it is a separate re-skin pass, not a colour swap.
