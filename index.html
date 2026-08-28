@@ -149,8 +149,9 @@
                 class="absolute inset-0 w-full h-full object-cover object-center"
                 loading="eager" fetchpriority="high" decoding="async">
             <div class="absolute inset-0 bg-ink/45 pointer-events-none"></div>
+            <div class="hero-mobile-wash absolute inset-0 pointer-events-none lg:hidden"></div>
 
-            <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-5">
+            <div class="hero-content relative z-10 h-full flex flex-col items-center justify-center text-center px-5 pt-16 lg:pt-10">
 
                 <div class="flex items-center gap-2 mb-3">
                     <span class="flex gap-1">
@@ -168,24 +169,24 @@
                     Construction Built to the Highest Standard
                 </h1>
 
-                <p class="font-body text-white/85 text-base sm:text-lg max-w-2xl mt-6 leading-relaxed">
-                    Eaton &amp; Co is an owner-led building contractor delivering extensions, loft
-                    conversions, refurbishments and commercial fit-out.
-                </p>
-
                 <!-- three capabilities -->
-                <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 mt-7 font-body text-white/85 text-sm sm:text-[0.95rem]">
+                <div class="hero-caps flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 mt-7 font-body text-white/85 text-sm sm:text-[0.95rem]">
                     <span>Residential &amp; Commercial</span>
-                    <span class="text-gold">&bull;</span>
+                    <span class="text-gold hidden sm:inline">&bull;</span>
                     <span>20+ Years in the Industry</span>
-                    <span class="text-gold">&bull;</span>
+                    <span class="text-gold hidden sm:inline">&bull;</span>
                     <span>Fully Insured</span>
                 </div>
 
-                <div class="flex flex-wrap items-center justify-center gap-6 mt-10">
-                    <a href="pages/contact.html" class="btn-line btn-line--light">Request a Quote</a>
+                <div class="hero-actions flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-6 mt-9 sm:mt-10 w-full">
+                    <a href="pages/contact.html" class="btn-line btn-line--light w-full sm:w-auto">Request a Quote</a>
                     <a href="pages/services.html" class="btn-underline btn-underline--light">View Our Services</a>
                 </div>
+
+                <!-- scroll cue, mobile only -->
+                <a href="#svc-rail" class="hero-cue lg:hidden" aria-label="Scroll to services">
+                    <span class="hero-cue-line"></span>
+                </a>
             </div>
         </section>
 

@@ -683,6 +683,88 @@ div[onmouseenter][style*="background:var(--ink)"] {
 .svc-dot.active { background: var(--gold); background-image: var(--grad-gold); width: 28px; }
 
 /* ============================================================
+   HERO - mobile treatment (desktop is untouched)
+   ============================================================ */
+@media (max-width: 1023px) {
+    /* A vertical wash so type stays legible against a busy photo,
+       without flattening the image the way a flat tint does. */
+    .hero-mobile-wash {
+        background: linear-gradient(to bottom,
+            color-mix(in srgb, var(--ink) 62%, transparent) 0%,
+            color-mix(in srgb, var(--ink) 24%, transparent) 38%,
+            color-mix(in srgb, var(--ink) 70%, transparent) 100%);
+    }
+
+    /* Slow drift on the hero photo - gives the panel some life on load */
+    [data-hero-image] > img {
+        animation: heroDrift 18s ease-in-out infinite alternate;
+        transform-origin: center 60%;
+    }
+    @keyframes heroDrift {
+        from { transform: scale(1.06); }
+        to   { transform: scale(1.14); }
+    }
+
+    /* Headline sized for a phone: tighter, no orphan words */
+    [data-hero-image] h1 {
+        font-size: clamp(2.1rem, 9.5vw, 3rem);
+        line-height: 1.08;
+        text-wrap: balance;
+        max-width: 15ch;
+    }
+
+    /* Capabilities read as a stacked list rather than a cramped row */
+    .hero-caps {
+        flex-direction: column;
+        gap: 0.4rem;
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.02em;
+    }
+
+    .hero-actions { max-width: 20rem; }
+
+    /* Content sits slightly below optical centre so the building shows */
+    .hero-content { justify-content: center; padding-bottom: 3.5rem; }
+
+    /* Scroll cue */
+    .hero-cue {
+        position: absolute;
+        left: 50%;
+        bottom: 2rem;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 46px;
+        overflow: hidden;
+    }
+    .hero-cue-line {
+        display: block;
+        width: 1px;
+        height: 100%;
+        background: rgba(255,255,255,0.35);
+        position: relative;
+    }
+    .hero-cue-line::after {
+        content: '';
+        position: absolute;
+        left: 0; top: -46px;
+        width: 1px; height: 46px;
+        background: var(--gold);
+        animation: cueRun 2.4s cubic-bezier(0.6,0,0.4,1) infinite;
+    }
+    @keyframes cueRun {
+        0%   { transform: translateY(0); }
+        70%  { transform: translateY(92px); }
+        100% { transform: translateY(92px); }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [data-hero-image] > img { animation: none; }
+    .hero-cue-line::after   { animation: none; top: 0; }
+}
+
+/* ============================================================
    MOBILE
    ============================================================ */
 @media (max-width: 1023px) {
