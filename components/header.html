@@ -143,9 +143,20 @@
 
     <!-- MOBILE DRAWER -->
     <div id="mobileNav"
-        class="lg:hidden fixed inset-x-0 top-0 z-40 opacity-0 invisible -translate-y-4 pointer-events-none
-               transition-all duration-300 bg-white border-b border-[color:var(--border)] pt-24 pb-8">
-        <nav class="flex flex-col items-center gap-5 font-body text-lg text-ink">
+        class="lg:hidden fixed inset-0 z-40 opacity-0 invisible pointer-events-none
+               transition-opacity duration-300 bg-white overflow-y-auto">
+
+        <div class="flex items-center justify-between px-5 py-5 border-b border-[color:var(--border)]">
+            <button id="menuClose" class="p-1 text-ink focus:outline-none" aria-label="Close menu">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <span class="wordmark text-[1.05rem] text-ink">Eaton<span class="amp">&amp;</span>Co</span>
+            <span class="w-7" aria-hidden="true"></span>
+        </div>
+
+        <nav class="flex flex-col items-center text-center gap-6 font-body text-lg text-ink py-10 px-6">
             <a href="/index.html"          class="hover:text-gold-text transition-colors">Home</a>
             <a href="/pages/services.html" class="hover:text-gold-text transition-colors">Services</a>
             <a href="/pages/about.html"    class="hover:text-gold-text transition-colors">About Us</a>
@@ -153,6 +164,12 @@
             <a href="/pages/booking.html"  class="hover:text-gold-text transition-colors">Booking</a>
             <a href="/pages/pricing.html"  class="hover:text-gold-text transition-colors">Pricing</a>
             <a href="/pages/contact.html"  class="hover:text-gold-text transition-colors">Contact</a>
+
+            <span class="block w-12 h-[2px] bg-gold my-2"></span>
+
+            <a href="tel:+447458393362" class="btn-line btn-line--dark w-full max-w-xs">Call Liam</a>
+            <p class="font-body text-ink/50 text-sm">07458 393362</p>
         </nav>
     </div>
+
 </header>

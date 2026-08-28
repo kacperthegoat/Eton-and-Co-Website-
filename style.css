@@ -682,11 +682,41 @@ div[onmouseenter][style*="background:var(--ink)"] {
 .svc-dot:hover { transform: scale(1.3); }
 .svc-dot.active { background: var(--gold); background-image: var(--grad-gold); width: 28px; }
 
+/* ============================================================
+   MOBILE
+   ============================================================ */
+@media (max-width: 1023px) {
+    /* Everything reads centred on a phone */
+    main h1, main h2, main h3, main h4,
+    main p, main li,
+    main .svc-head, main .gs-card-body,
+    main .btn-line, main .btn-underline {
+        text-align: center;
+    }
+    main .gs-card-body { text-align: center; }
+    main .gs-card-actions { justify-items: stretch; }
+
+    /* Rules and button rows centre with them */
+    main span.block.bg-gold,
+    main .rule-draw { margin-left: auto; margin-right: auto; }
+    main .flex.flex-wrap { justify-content: center; }
+
+    /* Stat and list blocks centre their contents */
+    main .grid > div { text-align: center; }
+
+    /* Tables stay left aligned - centring them is unreadable */
+    main table, main table th, main table td { text-align: left; }
+
+    /* Header: wordmark truly centred, tighter band */
+    #header-container { padding-top: 0.75rem !important; padding-bottom: 0.75rem !important; }
+    #site-header .wordmark { display: block; line-height: 1; }
+}
+
 /* --Coverage radius drawn over the map embed -------------------------------- */
 .coverage-ring {
     position: absolute;
     top: 50%; left: 50%;
-    width: min(58%, 340px);
+    width: min(62%, 340px);
     aspect-ratio: 1 / 1;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -704,6 +734,10 @@ div[onmouseenter][style*="background:var(--ink)"] {
     border-radius: 50%;
     background: var(--gold);
     box-shadow: 0 0 0 4px color-mix(in srgb, var(--ink) 55%, transparent);
+}
+
+@media (max-width: 1023px) {
+    .coverage-ring { width: min(70%, 220px); border-width: 2px; }
 }
 
 /* --Wordmark (header + footer) --------------------------------------------- */

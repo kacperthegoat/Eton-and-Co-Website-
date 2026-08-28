@@ -4,24 +4,28 @@ async function initApp() {
     // ==========================================
     // 1. MOBILE MENU LOGIC (Smooth Animation)
     // ==========================================
-    const menuBtn = document.getElementById('menuBtn');
+    const menuBtn   = document.getElementById('menuBtn');
+    const menuClose = document.getElementById('menuClose');
     const mobileNav = document.getElementById('mobileNav');
 
-    if (menuBtn && mobileNav) {
-        menuBtn.addEventListener('click', () => {
-            mobileNav.classList.toggle('opacity-0');
-            mobileNav.classList.toggle('invisible');
-            mobileNav.classList.toggle('-translate-y-4');
-            mobileNav.classList.toggle('pointer-events-none');
-            
-            const svg = menuBtn.querySelector('svg');
-            if (mobileNav.classList.contains('opacity-0')) {
-                svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
-            } else {
-                svg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
-            }
-        });
+    function openMenu() {
+        if (!mobileNav) return;
+        mobileNav.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+        document.body.style.overflow = 'hidden';
     }
+    function closeMenu() {
+        if (!mobileNav) return;
+        mobileNav.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+        document.body.style.overflow = '';
+    }
+
+    if (menuBtn)   menuBtn.addEventListener('click', openMenu);
+    if (menuClose) menuClose.addEventListener('click', closeMenu);
+    if (mobileNav) {
+        /* tapping any link closes the drawer */
+        mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 
     initHeaderScroll();
     markActiveNav();

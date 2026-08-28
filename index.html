@@ -444,17 +444,18 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch reveal reveal-up">
 
                     <!-- LEFT: coverage map, centred on Grays with a coverage radius -->
-                    <div class="relative overflow-hidden min-h-[420px] lg:min-h-[540px]" style="background:var(--ink);">
+                    <div class="relative overflow-hidden min-h-[340px] sm:min-h-[420px] lg:min-h-[540px]" style="background:var(--ink);">
                         <iframe
                             title="Eaton Construction, Grays - areas covered"
                             src="https://www.google.com/maps?q=Eaton+Construction,+Grays,+UK&ll=51.4730599,0.3256017&z=9&output=embed"
+                            allowfullscreen
                             class="absolute inset-0 w-full h-full border-0"
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                         <!-- coverage radius indicator -->
                         <div class="coverage-ring" aria-hidden="true"></div>
 
-                        <div class="absolute bottom-0 inset-x-0 px-7 py-5 pointer-events-none"
+                        <div class="absolute bottom-0 inset-x-0 px-5 sm:px-7 py-5 text-center lg:text-left pointer-events-none"
                              style="background:linear-gradient(to top, color-mix(in srgb, var(--ink) 92%, transparent), transparent);">
                             <p class="font-heading font-bold text-white text-xl">Where We Work</p>
                             <p class="font-body text-white/75 text-sm mt-1">Based in Grays, Essex, covering Essex, London and the surrounding counties.</p>
@@ -779,12 +780,6 @@
 
                     <div
                         class="w-full lg:w-6/12 text-center reveal reveal-up order-1 lg:order-2 flex flex-col items-center">
-
-                        <span
-                            class="inline-block px-5 py-1.5 font-body font-bold text-sm tracking-widest uppercase mb-6 cursor-default shadow-sm transition-colors duration-300 pill-dark-bg"
-                            style="background:var(--gold-soft); color:var(--ink);">
-                            Ready to Get Started?
-                        </span>
 
                         <h2
                             class="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
