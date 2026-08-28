@@ -133,12 +133,13 @@
             <span class="wordmark text-[1.05rem] sm:text-xl lg:text-[1.6rem]">Eaton<span class="amp">&amp;</span>Co</span>
         </a>
 
-        <!-- RIGHT: three links -->
-        <nav class="flex items-center gap-6 lg:gap-8 justify-self-end">
-            <a href="/pages/booking.html" class="hdr-link hidden lg:inline-block">Booking</a>
-            <a href="/pages/pricing.html" class="hdr-link hidden lg:inline-block">Pricing</a>
+        <!-- RIGHT: desktop only. On mobile these live in the drawer. -->
+        <nav class="hidden lg:flex items-center gap-8 justify-self-end">
+            <a href="/pages/booking.html" class="hdr-link">Booking</a>
+            <a href="/pages/pricing.html" class="hdr-link">Pricing</a>
             <a href="/pages/contact.html" class="hdr-link">Contact</a>
         </nav>
+        <span class="lg:hidden justify-self-end w-7" aria-hidden="true"></span>
     </div>
 
     <!-- MOBILE DRAWER -->
