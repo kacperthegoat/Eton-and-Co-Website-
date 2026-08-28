@@ -1,11 +1,11 @@
 {
-  "name": "Standfast Fencing",
-  "short_name": "Standfast",
-  "description": "Fencing, decking and garden timbercraft in Norwich, Norfolk.",
+  "name": "Eaton & Co",
+  "short_name": "Eaton & Co",
+  "description": "Construction, extensions, loft conversions and refurbishments across Essex and London.",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#F5F3EE",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
   "icons": [
     {
       "src": "android-chrome-192x192.png",

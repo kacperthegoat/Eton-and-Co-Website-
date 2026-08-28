@@ -1,22 +1,4 @@
-# macOS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-
-# Build scripts (not part of the public site)
-*.py
-scratch/
-*.textClipping
-
-# Dependencies
 node_modules/
-.npm
-
-# Env / secrets
 .env
-.env.*
-*.key
-*.pem
-*.secret
+.vercel/
