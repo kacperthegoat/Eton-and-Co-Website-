@@ -715,14 +715,19 @@ div[onmouseenter][style*="background:var(--ink)"] {
 
     /* Subheading: short measure, generous leading, nothing else competing */
     .hero-sub {
-        font-size: 0.98rem;
-        line-height: 1.65;
-        margin-top: 1.1rem;
-        max-width: 32ch;
-        color: rgba(255,255,255,0.82);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-top: 1rem;
+        max-width: 28ch;
+        color: rgba(255,255,255,0.8);
     }
 
-    .hero-actions { max-width: 20rem; margin-top: 2rem; }
+    /* One primary button, the secondary link tucked directly under it */
+    .hero-actions {
+        max-width: 17rem;
+        margin-top: 1.75rem;
+        gap: 0.9rem;
+    }
 
     /* Content sits slightly below optical centre so the building shows */
     .hero-content { justify-content: center; padding-bottom: 3.5rem; }
